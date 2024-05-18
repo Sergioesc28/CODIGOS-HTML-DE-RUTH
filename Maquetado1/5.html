@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px; /* Adjusted to match the example */
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grupo-formulario label {
+    width: 30%;
+    margin-right: 10px;
+    color: #333;
+    text-align: right;
+    align-self: center;
+}
+
+.grupo-formulario input[type="text"],
+.grupo-fecha input[type="text"] {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.grupo-fecha {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.grupo-fecha input {
+    width: 30%; /* Adjusted for three inputs side by side */
+    margin-right: 5px;
+}
+
+.grupo-fecha input:last-child {
+    margin-right: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <div class="grupo-formulario">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido (como se muestra en su pasaporte)">
+            </div>
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Solo nombre">
+            </div>
+            <div class="grupo-formulario">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <div class="grupo-fecha">
+                    <input type="text" id="dia_nacimiento" name="dia_nacimiento" placeholder="Día">
+                    <input type="text" id="mes_nacimiento" name="mes_nacimiento" placeholder="Mes">
+                    <input type="text" id="ano_nacimiento" name="ano_nacimiento" placeholder="Año">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="ciudad_nacimiento">Ciudad de nacimiento:</label>
+                <input type="text" id="ciudad_nacimiento" name="ciudad_nacimiento" placeholder="Ciudad de nacimiento">
+            </div>
+            <div class="grupo-formulario">
+                <label for="pais_nacimiento">País de nacimiento:</label>
+                <input type="text" id="pais_nacimiento" name="pais_nacimiento" placeholder="País de nacimiento">
+            </div>
+            <div class="grupo-formulario">
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Nacionalidad">
+            </div>
+            <div class="grupo-formulario">
+                <label for="numero_pasaporte">Número de pasaporte:</label>
+                <input type="text" id="numero_pasaporte" name="numero_pasaporte" placeholder="Número de pasaporte">
+            </div>
+            <div class="grupo-formulario">
+                <label for="fecha_expedicion_pasaporte">Fecha de emisión del pasaporte:</label>
+                <div class="grupo-fecha">
+                    <input type="text" id="dia_expedicion" name="dia_expedicion" placeholder="Día">
+                    <input type="text" id="mes_expedicion" name="mes_expedicion" placeholder="Mes">
+                    <input type="text" id="ano_expedicion" name="ano_expedicion" placeholder="Año">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="fecha_vencimiento_pasaporte">Fecha de vencimiento de su pasaporte:</label>
+                <div class="grupo-fecha">
+                    <input type="text" id="dia_vencimiento" name="dia_vencimiento" placeholder="Día">
+                    <input type="text" id="mes_vencimiento" name="mes_vencimiento" placeholder="Mes">
+                    <input type="text" id="ano_vencimiento" name="ano_vencimiento" placeholder="Año">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
