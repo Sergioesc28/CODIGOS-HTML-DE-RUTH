@@ -3,67 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloglee</title>
+    <title>Boogle</title>
     <style>
-        /* Estilos para el cuerpo de la página */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-        /* Estilos para el contenedor principal */
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
 
-        /* Estilos para la barra de búsqueda */
-        .search-bar {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+.encabezado {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
 
-        /* Estilos para los botones */
-        .search-button {
-            background-color: #4285f4;
-            color: #fff;
-            border: none;
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-        }
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-        /* Estilos para el cuadro de búsqueda */
-        .search-input {
-            width: 80%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
+.navegacion-principal ul {
+    display: flex;
+    list-style-type: none;
+}
 
-        /* Estilos para la etiqueta "Boogle" en el cuadro de búsqueda */
-        .search-label {
-            font-weight: bold;
-            color: #555;
-        }
+.navegacion-principal ul li {
+    margin: 0 10px;
+}
+
+.navegacion-principal ul li a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.titulo {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.barra-busqueda {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.botones {
+    margin-bottom: 20px;
+}
+
+.boton {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #eee;
+}
+
+.enlaces {
+    margin-bottom: 20px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #1a0dab;
+    margin: 0 5px;
+}
+
+.pie-pagina {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.enlaces-inferiores {
+    margin-bottom: 10px;
+}
+
+.enlaces-inferiores a {
+    text-decoration: none;
+    color: #1a0dab;
+    margin: 0 10px;
+}
+
     </style>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="search-bar">
-            <h1>Bloglee</h1>
-            <input type="text" class="search-input" placeholder="Buscar en Boogle">
-            <button class="search-button">Boogle Search</button>
-        
+    <header class="encabezado">
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Imágenes</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">more &raquo;</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Boogle</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h1 class="titulo">Boogle</h1>
+        <input type="text" class="barra-busqueda" />
+        <div class="botones">
+            <button class="boton">Boogle Search</button>
         </div>
-    </div>
+        <div class="enlaces">
+            <a href="#">National Search</a> |
+            <a href="#">Preferences</a>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="enlaces-inferiores">
+            <a href="#">Advertising Programs</a>
+            <a href="#">Business Solutions</a>
+            <a href="#">About Boogle</a>
+        </div>
+        <p>&copy; 2024 Boogle</p>
+    </footer>
 </body>
 </html>
