@@ -1,85 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae</title>
+    <title>Currículum Vitae de Sergio Eduardo España Lucio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
-            display: flex;
-            justify-content: center;
+        }
+
+        .contenedor {
+            margin: 0 auto;
+            max-width: 800px;
             padding: 20px;
         }
-        .container {
-            width: 800px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
+
+        .encabezado {
             text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
+
+        .seccion {
+            margin-bottom: 30px;
         }
-        header p {
-            margin: 0;
-            font-size: 12px;
-            color: #888;
+
+        .info-personal {
+            margin-bottom: 30px;
         }
-        .section {
-            margin-top: 20px;
-            padding: 10px;
-            border-radius: 5px;
+
+        .habilidades-personales {
+            margin-bottom: 30px;
         }
-        .section.personal-info {
-            background-color: #fddfdf;
+
+        .habilidades-tecnicas {
+            margin-bottom: 30px;
         }
-        .section.experience {
-            background-color: #f0f8ff;
+
+        .idioma {
+            margin-bottom: 30px;
         }
-        .section.education {
-            background-color: #fddfdf;
+
+        .otra-info {
+            margin-bottom: 30px;
         }
-        .section.skills, .section.technical-skills, .section.driving-license, .section.additional-info {
-            background-color: #f0f8ff;
-        }
-        .section.language {
-            background-color: #fddfdf;
-        }
-        h2 {
-            margin-top: 0;
-            font-size: 18px;
-            color: #d00;
-        }
-        .section img {
-            float: left;
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+
+        .info-adicional {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <div class="contenedor">
+        <header class="encabezado">
             <h1>Currículum Vitae de Sergio Eduardo España Lucio</h1>
             <p>Curriculum</p>
         </header>
-        <div class="section personal-info clearfix">
+        <div class="seccion info-personal">
             <img src="IMG/Imagen de WhatsApp 2024-05-16 a las 21.53.19_d7b7028d.jpg" alt="Foto del alumno"> 
             <h2>Datos personales</h2>
             <p><strong>Nombre y Apellidos:</strong> Sergio Eduardo España Lucio</p>
@@ -90,14 +69,14 @@
             <p><strong>Fecha de nacimiento:</strong> 28/03/2005</p>
             <p><strong>CURP:</strong> EALNSCRA28</p>
         </div>
-        <div class="section experience">
+        <div class="seccion experiencia">
             <h2>Experiencia laboral</h2>
             <ul>
                 <li><strong>Año-Inicio - Año-Fin:</strong> Empresa, Dirección, Puesto, Funciones</li>
                 <li><strong>2017-1019:</strong>Microsoft, Calle 80, nº71 Merida. Empresa dedicada a la creación de neuvas tecnologias. Ocupé el puesto de desarrollador</li>
             </ul>
         </div>
-        <div class="section education">
+        <div class="seccion educacion">
             <h2>Educación y formación</h2>
             <ul>
                 <li><strong>Año-Inicio - Año-Fin:</strong> Institución, Ubicación, Título</li>
@@ -105,11 +84,11 @@
                 <li><strong>1996-1998:</strong> Preparatoria estatal numero 6. Educacion media Superior</li>
             </ul>
         </div>
-        <div class="section skills">
+        <div class="seccion habilidades-personales">
             <h2>Capacidades y aptitudes personales</h2>
             <p>Soy alguien que pueda trabajar en equipo y tomar cierto liderazgo en los trabajos de equipo</p>
         </div>
-        <div class="section technical-skills">
+        <div class="seccion habilidades-tecnicas">
             <h2>Capacidades y aptitudes técnicas</h2>
             <ul>
                 <li><strong>Informática:</strong> Conocimientos altos a nivel de usuario en sistemas Windows. Conocimientos medios a nivel usuario en sistemas GNU/Linux.</li>
@@ -117,24 +96,30 @@
                 <li>Conocimientos altos a nivel de programador en sistemas Windows (C#)</li>
             </ul>
         </div>
-        <div class="section language">
+        <div class="seccion idioma">
             <h2>Lengua materna</h2>
             <p><strong>Español</strong></p>
         </div>
-        <div class="section other-info">
+        <div class="seccion otra-info">
             <h2>Otros idiomas</h2>
             <ul>
                 <li><strong>Inglés:</strong> Nivel Medio</li>
             </ul>
         </div>
-        <div class="section driving-license">
+        <div class="seccion permiso-conduccion">
             <h2>Permiso de conducción</h2>
             <p>Licencia de conducir B-1 obtenida el 25 de marzo del 2024, Vehículo propio, Disponibilidad para viajar.</p>
         </div>
-        <div class="section additional-info">
+        <div class="seccion info-adicional">
             <ul>
                 <li><strong>EDAD</strong>19</li>
             </ul>
+
+        </div>
+    </div>
+</body>
+</html>
+
 
         </div>
     </div>
